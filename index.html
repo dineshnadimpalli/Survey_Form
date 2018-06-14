@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <h1 id="title">Student Details</h1>
+<div id="outer-layout">
+  <p id="description">
+    Provide all the required information in the fields provided for better oppurtunities in Campus Placements
+  </p>
+  <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">* Name :</label>
+      </div>
+      <div class="rightTab">
+        <input class="input-field" type="text" name="name" id="name" placeholder="Your name?" autofocus required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">* Email :</label>
+      </div>
+      <div class="rightTab">
+        <input class="input-field" type="email" id="email" name="email" placeholder="Your Email ID?" autofocus required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="number">* Age :</label>
+      </div>
+      <div class="rightTab">
+        <input class="input-field" type="number" id="number" name="age" placeholder="Enter your Age" min="1" max="125" autofocus required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="branch" for="stream">* Branch :</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="branch" class="dropdown">
+          <option disabled value>Select your Branch</option>
+          <option value="ECE">ECE</option>
+          <option value="CSE">CSE</option>
+          <option value="IT">IT</option>
+          <option value="EEE">EEE</option>
+          <option value="CIVIL">CIVIL</option>
+          <option value="MECH">MECH</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="gender" for="gender">* Gender :</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style:none;">
+          <li class="radio"><label><input name="radio-buttons" value="1"  type="radio" class="gender" >Male</label></li>
+          <li class="radio"><label><input name="radio-buttons" value="1"  type="radio" class="gender" >Female</label></li>
+          <li class="radio"><label><input name="radio-buttons" value="1"  type="radio" class="gender" >Other</label></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label for="interest">Which field are you most interested in? : </label>
+      </div>
+      <div class="rightTab">
+        <select id="interest" name="interest" class="dropdown">
+          <option disabled selected value>Select an option</option>
+          <option value="Networking">Networking</option>
+          <option value="Software">Software</option>
+          <option value="Automobiles">Automobiles</option>
+          <option value="Architecture">Architecture</option>
+          <option value="Management">Management</option>
+          <option value="Human Resource">Human Resource</option>
+       </select>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label for="skills">Skills you are familiar with<br>(Check all that apply): </label>
+      </div>
+      <div class="rightTab">
+        <ul id="skills" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="skills">C</label></li>
+          <li class="checkbox"><label><input name="prefer" value="2" type="checkbox" class="skills">C++</label></li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="skills">Python</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="skills">CAD</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="skills">Event Management</label></li>
+          <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="skills">Git & Github</label></li>
+          <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="skills">Graphic Designing</label></li>
+          <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="skills">Photoshop</label></li>
+          <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="skills">Artificial Intelligence</label></li>
+          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="skills">IoT</label></li>
+          <li class="checkbox"><label><input name="prefer" value="11" type="checkbox" class="skills">Additional Courses</label></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label for="comments">Any Comments you want to mention?</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+    </div>
+    
+    <button id="submit" type="submit">Submit</button>
+    
+  </form>
+</div>
+  <p class="text-center">A Pen by <a href="https://codepen.io/dashboard/">Dinesh Nadimaplli</a></p>
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+
+  
+
+</body>
+
+</html>
